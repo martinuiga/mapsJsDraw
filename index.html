@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+
+    <title>Shapefile in ggmaps yo!</title>
+    <style>
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="dist/shp.min.js"></script>
+    <script>
+        var map; //gmaps
+        var json; // variable for geojson
+        var base = 'pollud_failide_formaat.zip'; // source of shhapefile
+        shp(base).then(function (data) { //use converter to get geojson
+            json = data; //assign geojson to the variable
+        });
+
+        function initialize() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 2,
+                center: new google.maps.LatLng(2.8,-187.3),
+                mapTypeId: 'terrain'
+            });
+            console.log(json);
+            map.data.addGeoJson(json); //load does not work with local files, so addGgeoJson is used
+
+        }
+    </script>
+</head>
+<body>
+
+<div id="map"></div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB1FT6Dr2smPRmiJvEsZOw9hVefc7HGjM&callback=initialize">
+</script>
+</body>
+</html>
