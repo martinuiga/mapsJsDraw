@@ -336,7 +336,7 @@ var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
 
 function init () {
   var i
-  var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+  var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYÕÄÖÜZabcdefghijklmnopqrstuvwxyzõäöü0123456789+/'
   var len = code.length
 
   for (i = 0; i < len; i++) {
