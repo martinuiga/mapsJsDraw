@@ -4,5 +4,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="google_maps_api_v3_26.js" level="project" />
   </component>
 </module>
