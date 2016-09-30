@@ -12,7 +12,16 @@
 <script src="dist/shp.min.js"></script>
 <script src="lib/maps.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxzRNiTQpXhXohl4MpAg-IYVZQyknyla4&callback=initialize">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxzRNiTQpXhXohl4MpAg-IYVZQyknyla4&libraries=geometry&callback=initialize">
 </script>
+
+
+<button id="makeField" > CLICK ME FOR NEW FIELD </button>
+<form action='' method='POST' enctype='multipart/form-data'>
+    <input type='file' id='fileLocation'><br>
+</form>
+<button id="import" > CLICK ME TO IMPORT </button>
+<button onclick="localStorage.clear()" > CLICK ME TO CLEAR LOCALSTORAGE </button>
+
 </body>
 </html>
