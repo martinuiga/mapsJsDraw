@@ -2,7 +2,7 @@ import os
 from selenium import webdriver
 
 driver = webdriver.Firefox()
-driver.get("file://index.html");
+driver.get("file://" + os.path.abspath("../index.html");
 
 # Create a screenshots directory if not present
 # NOTE 2: We are taking screenshots to show CircleCI artifacts
