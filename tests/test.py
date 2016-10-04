@@ -12,7 +12,7 @@ if not (os.path.exists('./tests/screenshots')):
 driver.save_screenshot('./tests/screenshots/test.png')
 
 # Assert the Page Title
-find_element_by_id('map')
+driver.find_element_by_id('map')
 
 # Close the browser window
 driver.close()
