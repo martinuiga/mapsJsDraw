@@ -9,7 +9,7 @@ driver.get("file://index.html");
 driver.get_screenshot_as_file('screenshots/test.png')
 
 # Assert the Page Title
-map = driver.title('Shapefile GMaps')
+
 assert "Shapefile GMaps" in driver.title
 # Close the browser window
 driver.close()
