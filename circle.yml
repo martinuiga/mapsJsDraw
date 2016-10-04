@@ -20,4 +20,4 @@ test:
   post:
     - python tests/test.py
     - mkdir -p $CIRCLE_TEST_REPORTS/tests/
-    - "Testing" > $CIRCLE_TEST_REPORTS/tests/test.txt
+    - touch $CIRCLE_TEST_REPORTS/tests/test.txt
