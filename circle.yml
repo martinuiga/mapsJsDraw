@@ -19,3 +19,5 @@ dependencies:
 test:
   post:
     - python tests/test.py
+    - mkdir -p $CIRCLE_TEST_REPORTS/tests/
+    - "Testing" > $CIRCLE_TEST_REPORTS/tests/test.txt
