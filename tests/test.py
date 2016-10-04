@@ -10,6 +10,6 @@ driver.get_screenshot_as_file('screenshots/test.png')
 
 # Assert the Page Title
 
-assert "Google" in driver.title
+assert "Shapefile GMaps" in driver.title
 # Close the browser window
 driver.close()
