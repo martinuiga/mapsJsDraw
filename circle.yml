@@ -1,5 +1,14 @@
+## Set the artifacts
+general:
+  artifacts:
+    - "./tests/screenshots" #Save the screenshots for the tests
+ 
+## Customize dependencies
 dependencies:
-   post:
-      - wget https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
-      - java -jar selenium-server-standalone-2.44.0.jar:
-            background: true
+  pre:
+    - sudo pip install -U selenium	
+ 
+## Running Tests
+test:
+   override:
+    - python tests/test.py
