@@ -2,7 +2,7 @@ import os
 from selenium import webdriver
 
 driver = webdriver.Firefox()
-driver.Navigate().GoToRelativePath("/index.html");
+driver.navigate().goToRelativePath("/index.html");
 
 # Create a screenshots directory if not present
 # NOTE 2: We are taking screenshots to show CircleCI artifacts
