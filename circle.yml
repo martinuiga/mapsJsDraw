@@ -21,3 +21,9 @@ test:
     - python tests/test.py
     - mkdir -p $CIRCLE_TEST_REPORTS/tests/
     - touch $CIRCLE_TEST_REPORTS/tests/test.txt
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: maps-js-lib
