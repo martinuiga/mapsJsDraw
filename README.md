@@ -4,3 +4,4 @@
 # [Project plan](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Project plan) #
 # [Customer Meetings](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Customer Meetings) #
 # [UI wireframes](https://bitbucket.org/MMartiM/maps-js-lib/wiki/UI%20wireframes) #
+# [Release notes](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Release notes) #
