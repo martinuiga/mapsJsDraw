@@ -13,7 +13,8 @@
 4. Download "lib" and "dist" folders to your project
 5. import "dist/shp.min.js" to your HTML file (example below)
 6. Import "lib/maps.js" to your HTML file (example below)
-7. Assign correct values for the variable in the beginning of maps.js file. These are needed for he library to work correctly
+7. The id of the div where google maps is used must be 'map'. Alternatively, change the first argument of createMap function in the "initialize" function in maps.js.
+8. Assign correct values for the variable in the beginning of maps.js file. These are needed for he library to work correctly
 
 ```
 #!html
