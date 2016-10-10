@@ -11,11 +11,13 @@
 2. Enable Google Maps Javascript API and Google Maps Static Maps API from the API Manager at https://console.developers.google.com
 3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name "initialize" as the callback. (example below)
 4. Download "lib" and "dist" folders to your project
-4. Import "lib/maps.js" to your HTML file (example below)
-5. Assign correct values for the variable in the beginning of maps.js file. These are needed for he library to work correctly
+5. import "dist/shp.min.js" to your HTML file (example below)
+6. Import "lib/maps.js" to your HTML file (example below)
+7. Assign correct values for the variable in the beginning of maps.js file. These are needed for he library to work correctly
 
 ```
 #!html
+<script src="dist/shp.min.js"></script>
 <script src="lib/maps.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GOES_HERE&libraries=geometry&callback=initialize"></script>
 
