@@ -1,6 +1,6 @@
 machine:
   environment:
-    MOCHA_FILE: "$CIRCLE_TEST_REPORTS/test-results.xml"
+    MOCHA_FILE: "$CIRCLE_TEST_REPORTS/junit/test-results.xml"
   node:
     # Circle will use node v4.0.0
     version: 4.0.0
