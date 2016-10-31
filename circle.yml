@@ -5,22 +5,6 @@ machine:
     version: oraclejdk8
 
 ## Set the artifacts
-general:
-  artifacts:
-    - "./tests/screenshots" #Save the screenshots for the tests
- 
-## Customize dependencies
-dependencies:
-  post:
-    - pip install selenium
-    - wget http://selenium-release.storage.googleapis.com/3.0-beta4/selenium-server-standalone-3.0.0-beta4.jar
-    - java -jar selenium-server-standalone-3.0.0-beta4.jar:
-        background: true
-test:
-  post:
-    - python tests/test.py
-    - mkdir -p $CIRCLE_TEST_REPORTS/tests/
-    - touch $CIRCLE_TEST_REPORTS/tests/test.txt
 
 deployment:
   staging:
