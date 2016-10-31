@@ -1,0 +1,30 @@
+{
+  "name": "maps-js-lib",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha -V"
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^1.12.1"
+  },
+  "description": "1. Have a Google App API key\r 2. Enable Google Maps Javascript API and Google Maps Static Maps API from the API Manager at https://console.developers.google.com\r 3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name \"initialize\" as the callback. (**example below**)\r 4. Download \"lib\" and \"dist\" folders to your project\r 5. import \"dist/shp.min.js\" to your HTML file if you want to import Shapefile to Google Maps (**example below**)\r 6. Import \"lib/maps.js\" to your HTML file (**example below**)\r 7. The id of the div where google maps is used must be 'map'. Alternatively, change the first argument of createMap function in the \"initialize\" function in maps.js. (In the future, this step will be done automatically)",
+  "main": "lib/maps.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "mocha-junit-reporter": "^1.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MMartiM@bitbucket.org/MMartiM/maps-js-lib.git"
+  },
+  "keywords": [
+    "gmaps"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/MMartiM/maps-js-lib#readme"
+}

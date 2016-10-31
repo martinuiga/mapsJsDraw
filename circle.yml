@@ -1,5 +1,19 @@
+machine:
+  node:
+    # Circle will use node v4.0.0
+    version: 4.0.0
+dependencies:
+  override:
+    - npm install --dev
+    - npm install mocha
+    - npm install -g mocha-junit-reporter
 deployment:
   staging:
     branch: master
     heroku:
       appname: maps-js-lib
+test:
+  override:
+    - mocha test --reporter mocha-junit-reporter:
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
