@@ -7,3 +7,8 @@ deployment:
     branch: master
     heroku:
       appname: maps-js-lib
+test:
+  override:
+    - node ./node_modules/mocha/bin/mocha -V --reporter mocha-junit-reporter:
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
