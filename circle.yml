@@ -2,11 +2,6 @@ machine:
   node:
     # Circle will use node v4.0.0
     version: 4.0.0
-dependencies:
-  override:
-    - npm install --dev
-    - npm install mocha
-    - npm install -g mocha-junit-reporter
 deployment:
   staging:
     branch: master
