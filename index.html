@@ -41,11 +41,12 @@
 <br>
 <button onclick="maps.saveDataToLocalStorage()">Save data to localStorage</button>
 <br>
-<button onclick="maps.loadDatFromoLocalStorage()">Load data from localStorage</button>
+<button onclick="maps.loadDataFromLocalStorage()">Load data from localStorage</button>
 <br>
 <button onclick="maps._map.data.addListener('click', function (event) {
   console.log(maps.getScreenshot(event.feature));
 })">Select area and get screenshot URL to console</button>
+<button onclick="maps.toggleColorblind()">Toggle colorblind colors</button>
 </body>
 <script src="dist/shp.min.js"></script>
 <script src="lib/maps.js"></script>

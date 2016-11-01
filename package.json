@@ -5,7 +5,10 @@
     "test": "node_modules/.bin/mocha -V --reporter mocha-circleci-reporter test/*.js"
   },
   "devDependencies": {
-    "mocha-circleci-reporter": "0.0.2"
+    "chai": "*",
+    "mocha": "*",
+    "mocha-circleci-reporter": "0.0.2",
+    "mocha-junit-reporter": "^1.12.1"
   },
   "description": "1. Have a Google App API key\r 2. Enable Google Maps Javascript API and Google Maps Static Maps API from the API Manager at https://console.developers.google.com\r 3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name \"initialize\" as the callback. (**example below**)\r 4. Download \"lib\" and \"dist\" folders to your project\r 5. import \"dist/shp.min.js\" to your HTML file if you want to import Shapefile to Google Maps (**example below**)\r 6. Import \"lib/maps.js\" to your HTML file (**example below**)\r 7. The id of the div where google maps is used must be 'map'. Alternatively, change the first argument of createMap function in the \"initialize\" function in maps.js. (In the future, this step will be done automatically)",
   "main": "lib/maps.js",
@@ -15,6 +18,7 @@
   "dependencies": {
     "chai": "*",
     "mocha": "*",
+    "mocha-circleci-reporter": "0.0.2",
     "mocha-junit-reporter": "^1.12.1"
   },
   "repository": {
