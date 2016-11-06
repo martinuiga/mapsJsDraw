@@ -2,8 +2,8 @@
 var assert = chai.assert;
 
 describe("Map", function() {
-  describe("Importing GeoJSON", function() {
-    it("must exist on the map", function(done) {
+  describe("Area", function() {
+    it("must exist on the map after importing", function(done) {
       this.timeout(1000);
       setTimeout(function () {
         assert.equal(Object.keys(maps._allAreas).length, Object.keys(geo).length, "is equal");
@@ -11,7 +11,7 @@ describe("Map", function() {
       done();
     });
 
-    it("should delete area from the map", function(done) {
+    it("should be deleted from the map", function(done) {
       this.timeout(1000);
       setTimeout(function () {
         maps.deleteAreas(444, true);

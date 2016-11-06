@@ -1,4 +1,5 @@
-# [Testing page](https://maps-js-lib.herokuapp.com) #
+# [Example page](https://maps-js-lib.herokuapp.com) #
+# [Test results page](https://maps-js-lib.herokuapp.com/test.html) #
 
 # [Project vision and requirements](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Project vision and requirements) #
 # [Project plan](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Project plan) #

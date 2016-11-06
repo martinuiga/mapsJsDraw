@@ -6,7 +6,7 @@ machine:
     version: 4.0.0
 general:
   artifacts:
-    - "$CIRCLE_TEST_REPORTS/junit/test-results.xml"
+    - "./tests/screenshots"
 deployment:
   staging:
     branch: master
