@@ -7,6 +7,7 @@ machine:
 
 test:
   post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/tests/
     - "https://maps-js-lib.herokuapp.com/test.html" > $CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
 
 deployment:
