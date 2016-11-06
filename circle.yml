@@ -4,11 +4,13 @@ machine:
   node:
     # Circle will use node v4.0.0
     version: 4.0.0
-general:
-  artifacts:
-    - "./tests/screenshots"
+
 deployment:
   staging:
     branch: master
     heroku:
       appname: maps-js-lib
+
+test:
+  post:
+    - "https://maps-js-lib.herokuapp.com/test.html" > $CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
