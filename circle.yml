@@ -5,9 +5,9 @@ machine:
 
 test:
   post:
-    - mkdir -p $CIRCLE_TEST_REPORTS/tests/
-    - touch $CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
-    - "https://maps-js-lib.herokuapp.com/test.html" > $CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
+    - mkdir -p CIRCLE_TEST_REPORTS/tests/
+    - touch CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
+    - echo "https://maps-js-lib.herokuapp.com/test.html" > CIRCLE_TEST_REPORTS/tests/go_to_this_page_for_test_results.txt
 
 deployment:
   staging:
