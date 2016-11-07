@@ -8,8 +8,16 @@
 # [Release notes](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Release notes) #
 
 # How to install #
-1. Have a Google App API key
+1. Get Google App API key
+: Go to the API Console. https://console.developers.google.com
+: From the projects list, select a project or create a new one.
+: If the API Manager page isn't already open, open the menu  Gallery Menu  and select API Manager.
+: On the left, choose Credentials.
+: Click Create credentials and then select API key. 
 2. Enable Google Maps Javascript API and Google Maps Static Maps API from the API Manager at https://console.developers.google.com
+: If the API Manager page isn't already open, open the console menu and select API Manager, and then select Library.
+: Click the API you want to enable. If you need help finding the API, use the search field.
+: Click ENABLE.
 3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name "initialize" as the callback. (**example below**)
 4. Download "lib" and "dist" folders to your project
 5. import "dist/shp.min.js" to your HTML file if you want to import Shapefile to Google Maps (**example below**)
