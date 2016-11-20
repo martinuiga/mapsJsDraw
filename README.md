@@ -7,6 +7,8 @@
 # [UI wireframes](https://bitbucket.org/MMartiM/maps-js-lib/wiki/UI%20wireframes) #
 # [Release notes](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Release notes) #
 
+# [Peer review](https://bitbucket.org/MMartiM/maps-js-lib/wiki/Peer%20review) #
+
 # How to install #
 1. Get Google App API key
 : Go to the API Console. https://console.developers.google.com
