@@ -4,18 +4,27 @@ var assert = chai.assert;
 describe("Map", function() {
   describe("Area", function() {
     it("must exist on the map after importing", function(done) {
-      this.timeout(1000);
+      this.timeout(2000);
       setTimeout(function () {
         assert.equal(Object.keys(maps._allAreas).length, Object.keys(geo).length, "is equal");
-      }, 1000);
+      }, 2000);
+      done();
+    });
+
+    it("must have 'name' property of 'Test field' after editing metadata", function(done) {
+      this.timeout(3000);
+      setTimeout(function () {
+        assert.equal(maps._allAreas.features[0]["properties"]["name"], "Test field", "is equal");
+      }, 3000);
       done();
     });
 
     it("should be deleted from the map", function(done) {
-      this.timeout(1000);
+      this.timeout(4000);
       setTimeout(function () {
         maps.deleteAreas(444, true);
-      }, 1000);
+      }, 4000);
+
       assert.equal(Object.keys(maps._allAreas).length, 0, "is equal");
       done();
     });
