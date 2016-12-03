@@ -30,7 +30,7 @@
 #!html
 <script src="dist/shp.min.js"></script>
 <script src="lib/maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GOES_HERE&libraries=geometry&callback=initialize"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GOES_HERE&libraries=geometry&callback=maps.initialize"></script>
 
 ```  
 
