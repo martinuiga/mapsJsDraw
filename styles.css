@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-#map {
+div.map {
     width: 80%;
     height: 80%;
 }
