@@ -21,17 +21,23 @@
 : If the API Manager page isn't already open, open the console menu and select API Manager, and then select Library.
 : Click the API you want to enable. If you need help finding the API, use the search field.
 : Click ENABLE.
-3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name "initialize" as the callback. (**example below**)
+3. Import Google Maps to your HTML file, make sure to also include the geometry library and use the function name "maps.initMaps" as the callback. (**example below**)
 4. Download "lib" and "dist" folders to your project
 5. import "dist/shp.min.js" to your HTML file if you want to import Shapefile to Google Maps (**example below**)
 6. Import "lib/maps.js" to your HTML file (**example below**)
-7. The id of the div where google maps is used must be 'map'. Alternatively, change the first argument of createMap function in the "initialize" function in maps.js. (In the future, this step will be done automatically)
+7. To create a map on the page:
+```
+#!html
+var map1 = new maps.Maps(MY_API_KEY, 'mapDiv');
+
+```  
+
 
 ```
 #!html
 <script src="dist/shp.min.js"></script>
 <script src="lib/maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GOES_HERE&libraries=geometry&callback=maps.initialize"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GOES_HERE&libraries=geometry&callback=maps.initMaps"></script>
 
 ```  
 
