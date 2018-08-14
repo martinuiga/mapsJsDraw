@@ -1,7 +1,7 @@
 ## [Example page](https://maps-js-lib.herokuapp.com) ##
-# [Test results page](https://maps-js-lib.herokuapp.com/test.html) #
+## [Test results page](https://maps-js-lib.herokuapp.com/test.html) ##
 
-# How to install #
+### How to install ###
 1. Get Google App API key
 : Go to the API Console. https://console.developers.google.com
 : From the projects list, select a project or create a new one.
@@ -32,7 +32,7 @@ var map1 = new maps.Maps(MY_API_KEY, 'mapDiv');
 
 ```  
 
-# How to use #
+### How to use ###
 Loading from localStorage
 ---
 ```
