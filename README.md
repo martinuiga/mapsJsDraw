@@ -1,4 +1,4 @@
-# [Example page](https://maps-js-lib.herokuapp.com) #
+## [Example page](https://maps-js-lib.herokuapp.com) ##
 # [Test results page](https://maps-js-lib.herokuapp.com/test.html) #
 
 # How to install #
